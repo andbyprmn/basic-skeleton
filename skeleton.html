@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skeleton.css">
+    <title>Loading Skeleton</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-image skeleton">
+            <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGlsbHVzdHJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+        </div>
+        <a href="a" class="card-title skeleton">Card title here</a>
+        <p class="card-description skeleton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, expedita blanditiis, sit excepturi soluta ducimus laborum natus enim inventore quasi, earum sunt corporis consequatur fugiat esse aspernatur omnis nulla quam.</p>
+    </div>
+
+    <script>
+        const allSkeleton = document.querySelectorAll('.skeleton');
+
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                allSkeleton.forEach(item => {
+                    item.classList.remove('skeleton');
+                });
+            }, 2000); // 2000 milliseconds = 2 seconds
+        });
+    </script>
+</body>
+</html>
